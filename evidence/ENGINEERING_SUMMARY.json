@@ -1,0 +1,156 @@
+{
+  "schema_version": "ledgertrail-portfolio-evidence-summary-v1",
+  "assessment_date": "2026-09-29",
+  "overview_source_commit": "2bc586c124b94b3121a94020274d5e2310584684",
+  "evidence_level": "publisher_summary_of_source_and_repository_records_not_independent_verification",
+  "full_system_tests_rerun_for_this_publication": false,
+  "full_system_raw_junit_reacquired_for_this_publication": false,
+  "scale": {
+    "functional_domains": 12,
+    "sql_catalog": {
+      "source_path": "main/docs/reference/SQL_FUNCTION_CATALOG.md",
+      "source_git_blob": "1290588f194870011cae4d6eacb098783245435c",
+      "method": "Sum the committed generated catalogue category counts. The generator and live PostgreSQL catalogue were not rerun for this publication.",
+      "object_types": [
+        "functions",
+        "procedures",
+        "triggers",
+        "views",
+        "materialized_views"
+      ],
+      "categories": {
+        "信任強化": 2,
+        "外部整合": 28,
+        "安全治理": 142,
+        "延後模組": 48,
+        "本地證據一致性": 194,
+        "產品試點核心": 4,
+        "確定性會計核心": 47,
+        "維運觀測": 255,
+        "選用財務操作": 7
+      },
+      "total": 727,
+      "limitations": [
+        "Includes retained, deferred and disabled objects; not usable feature, table or endpoint counts.",
+        "Classification includes heuristics and inherited capability labels; it does not prove per-object activation or tests.",
+        "Generated complete_schema.sql is not added again."
+      ]
+    },
+    "long_term_deferred_capability_groups": 14,
+    "lines_of_code": null,
+    "lines_of_code_reason": "No deduplicated executable-source count performed; no LOC or completion percentage claimed."
+  },
+  "recorded_test_baseline": {
+    "source_commit": "0c15ee95951691f6344dd49a57d49fec2673cea3",
+    "record_path": "main/docs/engineering/BRANCH_INTEGRATION_20260920.md",
+    "record_git_blob": "dbedfca78d610224e20dde8d9bb5c648a0579c97",
+    "source_fingerprint_recorded": "dc09c97b72ea1ea979e93c293d12e0ed75ed449bef341d5b79df7db548898c34",
+    "windows_fast": {
+      "passed": 1570,
+      "skipped": 268,
+      "failed": 0,
+      "errors": 0
+    },
+    "linux_fast": {
+      "passed": 1576,
+      "skipped": 262,
+      "failed": 0,
+      "errors": 0
+    },
+    "distinct_python_cases_with_pass_across_complementary_environments": 1838,
+    "isolated_postgresql_modules": {
+      "modules": 29,
+      "passed": 298,
+      "skipped": 0,
+      "failed": 0,
+      "errors": 0,
+      "database_cases": 262,
+      "adjacent_unit_cases": 36
+    },
+    "original_problem_nodes": {
+      "failed": 4,
+      "skipped": 267,
+      "reported_reexecuted_pass": 271
+    },
+    "counting_rule": "Environment runs overlap. Do not add platform totals or 298 to 1838. Original SKIP results remain SKIP for their original environment.",
+    "raw_artifacts_status": "Not reacquired here; counts are quoted from the repository record, not a new JUnit reconciliation."
+  },
+  "public_module": {
+    "source_commit": "4841c00148a941520e8d2538e5107a4e73195320",
+    "preserved_files_manifest": "SOURCE.json",
+    "recorded_environment": {
+      "python": "3.12.14",
+      "pytest": "9.0.2"
+    },
+    "recorded_result": {
+      "passed": 112,
+      "skipped": 0
+    },
+    "reexecuted_for_this_publication": false,
+    "claim_scope": "Pure policy function on synthetic inputs, not DB posting or whole-system correctness."
+  },
+  "historical_browser": {
+    "source_commit": "9012a79dd736c572da0a98b91ce6620e07509fbf",
+    "date": "2026-09-12",
+    "result_record": "evidence/RESULTS.json",
+    "workflow_run_id": 34673341743,
+    "browser_artifact_id": 10291118201,
+    "workflow_jobs": {
+      "successful": 18,
+      "total": 19,
+      "overall_result": "failure"
+    },
+    "security_suite_recorded": {
+      "passed": 24,
+      "failed": 2
+    },
+    "browser_result_recorded": "PASS",
+    "command_responses_recorded": 19,
+    "accounting_export": {
+      "journal_count": 1,
+      "rows": 3,
+      "debit_total": "210.00",
+      "credit_total": "210.00"
+    },
+    "reexecuted_or_images_regenerated_for_this_publication": false,
+    "qualification": "Script-controlled synthetic accounts, not independent people. Delivery record is not recipient acceptance."
+  },
+  "case_source_records": [
+    {
+      "case": "versioning",
+      "path": "main/docs/engineering/ACCOUNTING_LIFECYCLE_REPAIR_20260913.md",
+      "git_blob": "528ab2b6a1405fc42f5b1aa9a91a4db24ed712d0",
+      "scope": "Recorded defects and current control requirements, not a new database run."
+    },
+    {
+      "case": "recovery",
+      "path": "portfolio/public/docs/CASE_STUDY.md",
+      "git_blob": "9c8983067c57d3110738c5c13021c80a87258731",
+      "scope": "Prior review of the historical browser artifact; not an independent or fresh artifact retrieval."
+    },
+    {
+      "case": "organization_and_user_contribution",
+      "path": "main/docs/engineering/USER_WORKFLOW_ACCEPTANCE_20260920.md",
+      "git_blob": "4d7ee0f0ca3f9ac2ee64d46d983f90aeb71f6098",
+      "scope": "Recorded owner requirements, decisions and validation scope including September 27 closeout; final out-of-repository report not obtained here."
+    },
+    {
+      "case": "named_reviewer",
+      "path": "main/docs/ui/SCREEN_INVENTORY.md",
+      "scope": "Current description at overview_source_commit; opened/responded do not establish external acceptance."
+    },
+    {
+      "case": "deferred_and_optional_finance",
+      "path": "main/docs/product/DEFERRED_MODULES_REGISTER.md",
+      "scope": "14 long-term groups plus separate incomplete optional finance projection; not current usable product scope."
+    }
+  ],
+  "not_established": [
+    "current_full_system_release_collector_pass",
+    "real_customer_outcomes",
+    "professional_accounting_acceptance",
+    "production_trust",
+    "enterprise_go_live"
+  ],
+  "identity_boundary": "AI-assisted implementation and test execution do not prove the owner independently wrote, debugged or reran the entire system."
+}

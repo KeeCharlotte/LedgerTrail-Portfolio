@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "portfolio_version": "0.3.0",
+  "portfolio_version": "0.4.0",
   "product_name": "帳跡 LedgerTrail",
   "engineering_name": "AAAS-TW",
   "engineering_short_name": "AAAS",
   "source_commit": "4841c00148a941520e8d2538e5107a4e73195320",
-  "description": "Selected files copied byte-for-byte from the declared private source snapshot. This record is a publisher declaration, not independent verification of the private repository.",
+  "description": "Selected implementation files retain the original private source snapshot byte-for-byte. Overview and evidence records have separate sources. This is a publisher declaration, not independent verification of the private repository.",
   "preserved_files": [
     {
       "path": "src/__init__.py",
@@ -28,6 +28,10 @@
       "sha256": "fe9e2a39ba4c64da2946df451d5a3a1620c895afbf5b273fd8bddc5b15a0820a"
     }
   ],
-  "project_overview_source_commit": "f5ea3d72c590bb03cead5c25777fc115326c6cc5",
-  "historical_system_evidence": "evidence/RESULTS.json"
+  "project_overview_source_commit": "2bc586c124b94b3121a94020274d5e2310584684",
+  "project_overview_assessment_date": "2026-09-29",
+  "project_overview_verification": "static_source_and_repository_record_review_not_full_system_execution",
+  "historical_system_evidence": "evidence/RESULTS.json",
+  "engineering_summary": "evidence/ENGINEERING_SUMMARY.json",
+  "public_baseline_commit": "e62c00d294e1ff86be500cf78c2f6a3f1b5ce131"
 }

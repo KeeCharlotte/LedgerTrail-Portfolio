@@ -1,7 +1,7 @@
 {
   "schema_version": "ledgertrail-portfolio-evidence-summary-v1",
   "assessment_date": "2026-10-02",
-  "overview_source_commit": "ea5a226f8823c32bc80ac761bb73eab3dd00cadf",
+  "overview_source_commit": "da8ad61e8f1055e276715a8f7a1aec2c0751116c",
   "evidence_level": "publisher_summary_of_source_and_repository_records_not_independent_verification",
   "full_system_tests_rerun_for_this_publication": false,
   "full_system_raw_junit_reacquired_for_this_publication": false,
@@ -90,6 +90,7 @@
     "claim_scope": "Pure policy function on synthetic inputs, not DB posting or whole-system correctness.",
     "publication_run": {
       "date": "2026-10-02",
+      "portfolio_version": "0.5.1",
       "platform": "Windows",
       "python": "3.13.3",
       "pytest": "9.0.2",
@@ -102,7 +103,25 @@
         "skipped": 0
       },
       "implementation_and_test_hashes_unchanged": true,
-      "scope": "Unmodified original public module on synthetic inputs only; not the complete private accounting system."
+      "scope": "Unmodified preserved public policy module on synthetic inputs only; not the complete private accounting system."
+    },
+    "previous_publication_run": {
+      "date": "2026-10-02",
+      "platform": "Windows",
+      "python": "3.13.3",
+      "pytest": "9.0.2",
+      "isolated_virtual_environment": true,
+      "third_party_plugin_autoload": false,
+      "result": {
+        "passed": 112,
+        "failed": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "implementation_and_test_hashes_unchanged": true,
+      "scope": "Unmodified original public module on synthetic inputs only; not the complete private accounting system.",
+      "portfolio_version": "0.5.0",
+      "identity_note": "Preserved execution from public commit 18eb67863d9a6c99252cf8e96f2d027412bc8035; not rerun by this documentation alignment."
     }
   },
   "historical_browser": {
@@ -180,9 +199,9 @@
     ],
     "timezone": "Asia/Taipei",
     "tested_source_commit": "e4258f2862ff761004e3ed5f67e52208e7ca062a",
-    "record_source_commit": "ea5a226f8823c32bc80ac761bb73eab3dd00cadf",
+    "record_source_commit": "da8ad61e8f1055e276715a8f7a1aec2c0751116c",
     "record_path": "main/docs/operations/APPLICATION_VERIFICATION_20261002.md",
-    "record_git_blob": "328c1c5050981571713cea7d3a5bbe6114448ea0",
+    "record_git_blob": "6a3cd0a4bb534c66b65ca28fc847eaf0fe2da34d",
     "verification_for_this_publication": "Repository record reviewed; full-system execution and original JUnit aggregation were not repeated for this publication.",
     "source_fingerprint_recorded": "67354e0b11273f7c71fe044c3e040225a4186d1297de0c64df53fbaaad0cd734",
     "execution_roles": {
@@ -280,7 +299,7 @@
         "root_cause_isolated": false,
         "repair_verified": false
       },
-      "reading_confirmation": "Owner reported not actually reading the evidence; HTTP content retrieval and reviewed IDs existed. Checkbox state was not fully recorded, so no checkbox-bypass claim is made.",
+      "reading_confirmation": "The owner confirmed that neither evidence document was actively opened for inspection; only the confirmation checkboxes were selected, and approval succeeded. This is not an unchecked-checkbox bypass. HTTP retrieval and reviewed IDs do not establish active opening, reading or correct comparison. No additional event-level UI trace established the minimal technical root cause; no repair or rerun is claimed.",
       "short_text": "Single-character posting and delivery text was accepted; acceptance does not establish adequate business meaning or actual external delivery."
     },
     "private_raw_evidence": "Original JUnit, logs, fixtures, observations and database backup remain in controlled private storage; they are not published here.",
@@ -327,12 +346,16 @@
     "exporter_git_blob": "b6672fbd998216c66ec9cb90ad0f55155b4bf616",
     "exporter_tests_git_blob": "ff292d7756b1ed29ce189fea8058b7168af74f97",
     "linux_exporter_tests": {
+      "python": "3.12.3",
       "tests": 22,
       "failed": 0,
       "errors": 0,
-      "skipped": 0
+      "skipped": 0,
+      "status": "passed",
+      "environment": "isolated network-disabled Linux container"
     },
     "windows_exporter_tests": {
+      "python": "3.13.3",
       "tests": 22,
       "failed": 0,
       "errors": 5,
@@ -344,9 +367,20 @@
       ],
       "tests_or_host_privileges_modified": false
     },
-    "publishing_environment": "Original exporter in an isolated, network-disabled Linux container; Windows failures retained, not relabeled as pass.",
+    "publishing_environment": "Original exporter executed in an isolated network-disabled Linux container; current Windows host errors retained and not relabeled as pass.",
     "public_file_inventory": 19,
-    "implementation_disclosure_expanded": false
+    "implementation_disclosure_expanded": false,
+    "portfolio_version": "0.5.1",
+    "identity_note": "Current 0.5.1 publishing validation; separate from private-system fast, PostgreSQL, browser and release-collector evidence.",
+    "content_source_commit": "f2b42f02d336d224073336ac729f35c0e480e2d9",
+    "public_baseline_commit": "18eb67863d9a6c99252cf8e96f2d027412bc8035",
+    "actual_export": {
+      "files": 19,
+      "status": "passed",
+      "verify_only_after_public_module_test": "passed",
+      "environment": "isolated network-disabled Linux container",
+      "output_was_outside_private_repository": true
+    }
   },
   "recent_implementation_changes": [
     {
@@ -374,5 +408,27 @@
       "scope": "Bounded repeated composite-row expansion repair; no date, permission or capacity claim change.",
       "publication_review": "Source and repository record review; no full-system rerun for this publication."
     }
-  ]
+  ],
+  "alignment_review": {
+    "date": "2026-10-02",
+    "private_source_commit": "da8ad61e8f1055e276715a8f7a1aec2c0751116c",
+    "public_baseline_commit": "18eb67863d9a6c99252cf8e96f2d027412bc8035",
+    "previous_private_publication_commit": "d7722ea9325e5826047e8f8ee8e1d1f525c34660",
+    "net_private_change": "M05 wording in main/docs/operations/APPLICATION_VERIFICATION_20261002.md only.",
+    "application_and_database_trees_unchanged": true,
+    "selected_module_and_test_blobs_match_current_private_source": true,
+    "scope": "Git source identity and repository record review; not full-system execution or repair validation.",
+    "m05_checkbox_selected": true,
+    "m05_active_evidence_opening_reported": false,
+    "m05_approval_succeeded": true,
+    "m05_root_cause_or_repair_verified": false,
+    "publication_gate_completed": true,
+    "publication_gate_scope": "19-file export and verify-only; exporter boundary tests on Linux; preserved public policy tests in an isolated Windows environment. No full private-system rerun.",
+    "full_system_rerun": false
+  },
+  "previous_publication_validation": {
+    "portfolio_version": "0.5.0",
+    "public_commit": "18eb67863d9a6c99252cf8e96f2d027412bc8035",
+    "identity_note": "Historical publishing validation retained for provenance; current 0.5.1 validation is recorded separately."
+  }
 }

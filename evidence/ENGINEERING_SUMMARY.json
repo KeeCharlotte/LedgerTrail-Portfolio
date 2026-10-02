@@ -1,7 +1,7 @@
 {
   "schema_version": "ledgertrail-portfolio-evidence-summary-v1",
-  "assessment_date": "2026-09-29",
-  "overview_source_commit": "2bc586c124b94b3121a94020274d5e2310584684",
+  "assessment_date": "2026-10-02",
+  "overview_source_commit": "ea5a226f8823c32bc80ac761bb73eab3dd00cadf",
   "evidence_level": "publisher_summary_of_source_and_repository_records_not_independent_verification",
   "full_system_tests_rerun_for_this_publication": false,
   "full_system_raw_junit_reacquired_for_this_publication": false,
@@ -9,7 +9,7 @@
     "functional_domains": 12,
     "sql_catalog": {
       "source_path": "main/docs/reference/SQL_FUNCTION_CATALOG.md",
-      "source_git_blob": "1290588f194870011cae4d6eacb098783245435c",
+      "source_git_blob": "9ee228e40734d278d4cf0456fc8a9aef13063c83",
       "method": "Sum the committed generated catalogue category counts. The generator and live PostgreSQL catalogue were not rerun for this publication.",
       "object_types": [
         "functions",
@@ -86,8 +86,24 @@
       "passed": 112,
       "skipped": 0
     },
-    "reexecuted_for_this_publication": false,
-    "claim_scope": "Pure policy function on synthetic inputs, not DB posting or whole-system correctness."
+    "reexecuted_for_this_publication": true,
+    "claim_scope": "Pure policy function on synthetic inputs, not DB posting or whole-system correctness.",
+    "publication_run": {
+      "date": "2026-10-02",
+      "platform": "Windows",
+      "python": "3.13.3",
+      "pytest": "9.0.2",
+      "isolated_virtual_environment": true,
+      "third_party_plugin_autoload": false,
+      "result": {
+        "passed": 112,
+        "failed": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "implementation_and_test_hashes_unchanged": true,
+      "scope": "Unmodified original public module on synthetic inputs only; not the complete private accounting system."
+    }
   },
   "historical_browser": {
     "source_commit": "9012a79dd736c572da0a98b91ce6620e07509fbf",
@@ -150,7 +166,213 @@
     "real_customer_outcomes",
     "professional_accounting_acceptance",
     "production_trust",
-    "enterprise_go_live"
+    "enterprise_go_live",
+    "source_evidence_mismatch_regression_fixed",
+    "single_all_green_current_windows_fast",
+    "single_complete_current_linux_pytest"
   ],
-  "identity_boundary": "AI-assisted implementation and test execution do not prove the owner independently wrote, debugged or reran the entire system."
+  "identity_boundary": "Owner execution of specified commands and manual operations is recorded separately from AI-assisted implementation, diagnosis and automation; neither establishes independent full-system or professional verification.",
+  "case_source_records_assessment_commit": "2bc586c124b94b3121a94020274d5e2310584684",
+  "recent_system_verification": {
+    "dates": [
+      "2026-10-01",
+      "2026-10-02"
+    ],
+    "timezone": "Asia/Taipei",
+    "tested_source_commit": "e4258f2862ff761004e3ed5f67e52208e7ca062a",
+    "record_source_commit": "ea5a226f8823c32bc80ac761bb73eab3dd00cadf",
+    "record_path": "main/docs/operations/APPLICATION_VERIFICATION_20261002.md",
+    "record_git_blob": "328c1c5050981571713cea7d3a5bbe6114448ea0",
+    "verification_for_this_publication": "Repository record reviewed; full-system execution and original JUnit aggregation were not repeated for this publication.",
+    "source_fingerprint_recorded": "67354e0b11273f7c71fe044c3e040225a4186d1297de0c64df53fbaaad0cd734",
+    "execution_roles": {
+      "owner": "Ran the public sample, selected private test commands and result checks, and nine manual UI operations.",
+      "ai_assistance": "Environment diagnosis, some targeted reruns and browser automation, fixture preparation, read-only database checks and evidence recording.",
+      "independent_third_party": false,
+      "multiple_independent_professionals": false
+    },
+    "postgresql": {
+      "test_files": 51,
+      "selected_passed_cases": 615,
+      "selected_failed_cases": 0,
+      "selected_errors": 0,
+      "selected_skipped_cases": 0,
+      "execution_scope": "Complementary isolated batches across Windows and Linux, not a single all-green run.",
+      "restore_windows_original": {
+        "passed": 17,
+        "failed": 2
+      },
+      "restore_linux_same_source": {
+        "passed": 19,
+        "failed": 0
+      },
+      "windows_restore_tests_fixed": false,
+      "counting_rule": "Do not add 615 to fast, public-module or prior-baseline totals; scopes overlap."
+    },
+    "windows_fast": {
+      "single_complete_pass": false,
+      "initial_run": "20261001T130926Z-22eb32e2158f",
+      "initial_outcome": "Interrupted after a hang; incomplete JUnit, not a pass.",
+      "second_run": "20261001T135740Z-57e25b85238c",
+      "six_static_checks_passed": true,
+      "pytest_exit_code": 1,
+      "console_counts": {
+        "passed": 2126,
+        "failed": 18,
+        "skipped": 585,
+        "errors": 4,
+        "subtests_passed": 182
+      },
+      "junit_testcase_nodes": {
+        "total": 2718,
+        "without_failure_error_skip": 2125,
+        "failed": 6,
+        "error": 2,
+        "skipped": 585
+      },
+      "junit_elements": {
+        "failure": 18,
+        "error": 4
+      },
+      "counting_rule": "Console, subtest/stage elements and testcase nodes are different units; preserve both, do not combine."
+    },
+    "linux_followups": {
+      "targeted_files": 4,
+      "passed": 164,
+      "subtests_passed": 28,
+      "skipped_postgresql_nodes_matched_to_prior_pass": 579,
+      "other_platform_cases_with_individual_pass": 6,
+      "full_pytest_outcome": "Attempt contained failures, stalled and was interrupted; not a full Linux or CI PASS."
+    },
+    "automated_browser": {
+      "result": "PASS",
+      "exit_code": 0,
+      "scenario": "Synthetic 105 draft, returned and revised to 210, recognition, approval, posting, reconciliation, exception handling and CSV.",
+      "uses_real_api_and_postgresql": true,
+      "includes_intentional_transport_fault_injection": true,
+      "export_debit_total": "210.00",
+      "export_credit_total": "210.00",
+      "all_browser_scripts_executed": false,
+      "independent_human_review_or_external_delivery": false
+    },
+    "manual_findings": {
+      "operations_recorded": 9,
+      "operations_are_not_nine_passed_tests": true,
+      "primary_counterexample": {
+        "record_id": "M02",
+        "status": "unresolved",
+        "original_invoice": {
+          "net": "100.00",
+          "tax": "5.00",
+          "gross": "105.00"
+        },
+        "selected_recognition_evidence": {
+          "net": "200.00",
+          "tax": "10.00",
+          "gross": "210.00"
+        },
+        "recognition_confirmed": true,
+        "approved": true,
+        "posted": true,
+        "journal_debit_total": "105.00",
+        "journal_credit_total": "105.00",
+        "finding": "A source/evidence amount and version mismatch survived recognition, approval and posting despite preserved sources, hashes and balanced entries.",
+        "root_cause_isolated": false,
+        "repair_verified": false
+      },
+      "reading_confirmation": "Owner reported not actually reading the evidence; HTTP content retrieval and reviewed IDs existed. Checkbox state was not fully recorded, so no checkbox-bypass claim is made.",
+      "short_text": "Single-character posting and delivery text was accepted; acceptance does not establish adequate business meaning or actual external delivery."
+    },
+    "private_raw_evidence": "Original JUnit, logs, fixtures, observations and database backup remain in controlled private storage; they are not published here.",
+    "not_run_or_not_established": [
+      "same-source complete release collector",
+      "single all-green Windows fast",
+      "single complete Linux pytest",
+      "all Node and browser scripts",
+      "professional acceptance",
+      "real external delivery",
+      "production readiness"
+    ]
+  },
+  "recent_workflow_audit": {
+    "tested_source_commit": "a455028c516093bcc6ebdb3ab5c9e05d46b1c14a",
+    "dates": [
+      "2026-09-29",
+      "2026-09-30"
+    ],
+    "record_path": "main/docs/engineering/HUMAN_WORKFLOW_AUDIT_20260930.md",
+    "record_source_commit": "ea5a226f8823c32bc80ac761bb73eab3dd00cadf",
+    "record_git_blob": "f28553059a92ee8f23bd3dcdfe60a8ea18c39744",
+    "scope": "Tool-assisted human-workflow simulation with fixture and owner setup interventions; not an independent enterprise trial.",
+    "journals": 4,
+    "journal_lines": 11,
+    "journal_roles": [
+      "recognition",
+      "settlement",
+      "reversal",
+      "replacement"
+    ],
+    "ending_balances": {
+      "bank_debit": "210.00",
+      "receivable": "0.00",
+      "revenue_credit": "200.00",
+      "output_tax_credit": "10.00"
+    },
+    "recorded_reproducible_issues": 16,
+    "all_issues_claimed_fixed": false,
+    "full_original_scenario_rerun_on_current_main": false
+  },
+  "publication_validation": {
+    "scope": "Public sample, publishing exporter and document checks only; separate from private-system fast or release collector.",
+    "exporter_git_blob": "b6672fbd998216c66ec9cb90ad0f55155b4bf616",
+    "exporter_tests_git_blob": "ff292d7756b1ed29ce189fea8058b7168af74f97",
+    "linux_exporter_tests": {
+      "tests": 22,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "windows_exporter_tests": {
+      "tests": 22,
+      "failed": 0,
+      "errors": 5,
+      "skipped": 0,
+      "status": "not_passed",
+      "observations": [
+        "Four symlink setup errors: Windows privilege not held (WinError 1314).",
+        "Replacing an existing empty output directory was denied (WinError 5)."
+      ],
+      "tests_or_host_privileges_modified": false
+    },
+    "publishing_environment": "Original exporter in an isolated, network-disabled Linux container; Windows failures retained, not relabeled as pass.",
+    "public_file_inventory": 19,
+    "implementation_disclosure_expanded": false
+  },
+  "recent_implementation_changes": [
+    {
+      "commit": "6536c34e914097e04184843fa81248bc2a406ec5",
+      "scope": "Stored settlement and correction lineage in case trace.",
+      "publication_review": "Source and repository record review; no full-system rerun for this publication."
+    },
+    {
+      "commit": "29007bbbfe945ea13c645351c51b5228242b3997",
+      "scope": "Recognition, posting date and settlement role-separation denial guidance.",
+      "publication_review": "Source and repository record review; no full-system rerun for this publication."
+    },
+    {
+      "commit": "71e76862aadbb01c5fc1727f95290012eee08826",
+      "scope": "Correction evidence selection and consumer rejection consistency.",
+      "publication_review": "Source and repository record review; no full-system rerun for this publication."
+    },
+    {
+      "commit": "4fb11e6144f4bc54aa3788f4de606ad37586e55c",
+      "scope": "Six-table row-content fingerprints and a snapshot shared with backup.",
+      "publication_review": "Source and repository record review; no full-system rerun for this publication."
+    },
+    {
+      "commit": "e4258f2862ff761004e3ed5f67e52208e7ca062a",
+      "scope": "Bounded repeated composite-row expansion repair; no date, permission or capacity claim change.",
+      "publication_review": "Source and repository record review; no full-system rerun for this publication."
+    }
+  ]
 }

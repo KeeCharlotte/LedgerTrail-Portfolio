@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "portfolio_version": "0.5.1",
+  "portfolio_version": "0.6.0",
   "product_name": "帳跡 LedgerTrail",
   "engineering_name": "AAAS-TW",
   "engineering_short_name": "AAAS",
@@ -28,16 +28,18 @@
       "sha256": "fe9e2a39ba4c64da2946df451d5a3a1620c895afbf5b273fd8bddc5b15a0820a"
     }
   ],
-  "project_overview_source_commit": "da8ad61e8f1055e276715a8f7a1aec2c0751116c",
-  "project_overview_assessment_date": "2026-10-02",
+  "project_overview_source_commit": "93c871ef24adb32a9fd64de33453548ca4661f10",
+  "project_overview_assessment_date": "2026-10-04",
   "project_overview_verification": "static_source_and_repository_record_review_not_full_system_execution",
   "historical_system_evidence": "evidence/RESULTS.json",
   "engineering_summary": "evidence/ENGINEERING_SUMMARY.json",
-  "public_baseline_commit": "18eb67863d9a6c99252cf8e96f2d027412bc8035",
-  "recent_system_verification_source_commit": "e4258f2862ff761004e3ed5f67e52208e7ca062a",
+  "public_baseline_commit": "47fe15c81ecc76bc51741696db830cc650ceb3b3",
+  "recent_system_verification_source_commit": "29fe3295c49559486e41e8d69f1238a51143572e",
   "portfolio_version_scope": "Public documentation and evidence-summary revision, not a production software release.",
-  "recent_system_verification_record_commit": "da8ad61e8f1055e276715a8f7a1aec2c0751116c",
-  "alignment_scope": "Documentation and source provenance alignment, including the clarified M05 manual review account; no runtime changes or full-system rerun.",
+  "recent_system_verification_record_commit": "93c871ef24adb32a9fd64de33453548ca4661f10",
+  "alignment_scope": "Add concrete audit operations and measured outcomes; update current bounded repair states while preserving all historical evidence identities.",
   "public_module_reexecuted_for_this_publication": true,
-  "publication_validation_scope": "0.5.1 public sample and 19-file exporter only; no full-system rerun."
+  "publication_validation_scope": "Public documentation, original audit evidence readback, sample tests and explicit exporter only; no complete system rerun.",
+  "audit_report": "docs/AUDIT_REVIEW_20261003.md",
+  "audit_verification_index_commit": "c8364fc27fd7c841f8a172cdce48676f0050d149"
 }

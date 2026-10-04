@@ -1,6 +1,6 @@
 [project]
 name = "ledgertrail-portfolio"
-version = "0.5.1"
+version = "0.6.0"
 description = "LedgerTrail accounting policy implementation for portfolio evaluation"
 requires-python = ">=3.11"
 

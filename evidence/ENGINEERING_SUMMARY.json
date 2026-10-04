@@ -1,15 +1,15 @@
 {
   "schema_version": "ledgertrail-portfolio-evidence-summary-v1",
-  "assessment_date": "2026-10-02",
-  "overview_source_commit": "da8ad61e8f1055e276715a8f7a1aec2c0751116c",
+  "assessment_date": "2026-10-04",
+  "overview_source_commit": "93c871ef24adb32a9fd64de33453548ca4661f10",
   "evidence_level": "publisher_summary_of_source_and_repository_records_not_independent_verification",
   "full_system_tests_rerun_for_this_publication": false,
-  "full_system_raw_junit_reacquired_for_this_publication": false,
+  "full_system_raw_junit_reacquired_for_this_publication": true,
   "scale": {
     "functional_domains": 12,
     "sql_catalog": {
       "source_path": "main/docs/reference/SQL_FUNCTION_CATALOG.md",
-      "source_git_blob": "9ee228e40734d278d4cf0456fc8a9aef13063c83",
+      "source_git_blob": "579a1dfc19e5d47f84aafa6c55e8becf031c629e",
       "method": "Sum the committed generated catalogue category counts. The generator and live PostgreSQL catalogue were not rerun for this publication.",
       "object_types": [
         "functions",
@@ -25,11 +25,11 @@
         "延後模組": 48,
         "本地證據一致性": 194,
         "產品試點核心": 4,
-        "確定性會計核心": 47,
+        "確定性會計核心": 48,
         "維運觀測": 255,
         "選用財務操作": 7
       },
-      "total": 727,
+      "total": 728,
       "limitations": [
         "Includes retained, deferred and disabled objects; not usable feature, table or endpoint counts.",
         "Classification includes heuristics and inherited capability labels; it does not prove per-object activation or tests.",
@@ -88,23 +88,6 @@
     },
     "reexecuted_for_this_publication": true,
     "claim_scope": "Pure policy function on synthetic inputs, not DB posting or whole-system correctness.",
-    "publication_run": {
-      "date": "2026-10-02",
-      "portfolio_version": "0.5.1",
-      "platform": "Windows",
-      "python": "3.13.3",
-      "pytest": "9.0.2",
-      "isolated_virtual_environment": true,
-      "third_party_plugin_autoload": false,
-      "result": {
-        "passed": 112,
-        "failed": 0,
-        "errors": 0,
-        "skipped": 0
-      },
-      "implementation_and_test_hashes_unchanged": true,
-      "scope": "Unmodified preserved public policy module on synthetic inputs only; not the complete private accounting system."
-    },
     "previous_publication_run": {
       "date": "2026-10-02",
       "platform": "Windows",
@@ -122,6 +105,42 @@
       "scope": "Unmodified original public module on synthetic inputs only; not the complete private accounting system.",
       "portfolio_version": "0.5.0",
       "identity_note": "Preserved execution from public commit 18eb67863d9a6c99252cf8e96f2d027412bc8035; not rerun by this documentation alignment."
+    },
+    "previous_publication_runs": [
+      {
+        "date": "2026-10-02",
+        "portfolio_version": "0.5.1",
+        "platform": "Windows",
+        "python": "3.13.3",
+        "pytest": "9.0.2",
+        "isolated_virtual_environment": true,
+        "third_party_plugin_autoload": false,
+        "result": {
+          "passed": 112,
+          "failed": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        "implementation_and_test_hashes_unchanged": true,
+        "scope": "Unmodified preserved public policy module on synthetic inputs only; not the complete private accounting system."
+      }
+    ],
+    "publication_run": {
+      "date": "2026-10-04",
+      "portfolio_version": "0.6.0",
+      "platform": "Windows",
+      "python": "3.13.3",
+      "pytest": "9.0.2",
+      "isolated_virtual_environment": true,
+      "third_party_plugin_autoload": false,
+      "result": {
+        "passed": 112,
+        "failed": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "implementation_and_test_hashes_unchanged": true,
+      "scope": "Standalone preserved public policy sample only; no complete private-system rerun."
     }
   },
   "historical_browser": {
@@ -181,18 +200,80 @@
     }
   ],
   "not_established": [
-    "current_full_system_release_collector_pass",
     "real_customer_outcomes",
     "professional_accounting_acceptance",
     "production_trust",
     "enterprise_go_live",
-    "source_evidence_mismatch_regression_fixed",
-    "single_all_green_current_windows_fast",
-    "single_complete_current_linux_pytest"
+    "all_document_formats_validated",
+    "M05_substantive_human_review",
+    "overall_local_engineering_readiness",
+    "independent_professional_assurance",
+    "complete_system_rerun_on_93c871e_or_publication_commit"
   ],
   "identity_boundary": "Owner execution of specified commands and manual operations is recorded separately from AI-assisted implementation, diagnosis and automation; neither establishes independent full-system or professional verification.",
   "case_source_records_assessment_commit": "2bc586c124b94b3121a94020274d5e2310584684",
-  "recent_system_verification": {
+  "recent_workflow_audit": {
+    "tested_source_commit": "a455028c516093bcc6ebdb3ab5c9e05d46b1c14a",
+    "dates": [
+      "2026-09-29",
+      "2026-09-30"
+    ],
+    "record_path": "main/docs/engineering/HUMAN_WORKFLOW_AUDIT_20260930.md",
+    "record_source_commit": "ea5a226f8823c32bc80ac761bb73eab3dd00cadf",
+    "record_git_blob": "f28553059a92ee8f23bd3dcdfe60a8ea18c39744",
+    "scope": "Tool-assisted human-workflow simulation with fixture and owner setup interventions; not an independent enterprise trial.",
+    "journals": 4,
+    "journal_lines": 11,
+    "journal_roles": [
+      "recognition",
+      "settlement",
+      "reversal",
+      "replacement"
+    ],
+    "ending_balances": {
+      "bank_debit": "210.00",
+      "receivable": "0.00",
+      "revenue_credit": "200.00",
+      "output_tax_credit": "10.00"
+    },
+    "recorded_reproducible_issues": 16,
+    "all_issues_claimed_fixed": false,
+    "full_original_scenario_rerun_on_current_main": false
+  },
+  "recent_implementation_changes": [
+    {
+      "commit": "6536c34e914097e04184843fa81248bc2a406ec5",
+      "scope": "Stored settlement and correction lineage in case trace.",
+      "publication_review": "Source and repository record review; no full-system rerun for this publication."
+    },
+    {
+      "commit": "29007bbbfe945ea13c645351c51b5228242b3997",
+      "scope": "Recognition, posting date and settlement role-separation denial guidance.",
+      "publication_review": "Source and repository record review; no full-system rerun for this publication."
+    },
+    {
+      "commit": "71e76862aadbb01c5fc1727f95290012eee08826",
+      "scope": "Correction evidence selection and consumer rejection consistency.",
+      "publication_review": "Source and repository record review; no full-system rerun for this publication."
+    },
+    {
+      "commit": "4fb11e6144f4bc54aa3788f4de606ad37586e55c",
+      "scope": "Six-table row-content fingerprints and a snapshot shared with backup.",
+      "publication_review": "Source and repository record review; no full-system rerun for this publication."
+    },
+    {
+      "commit": "e4258f2862ff761004e3ed5f67e52208e7ca062a",
+      "scope": "Bounded repeated composite-row expansion repair; no date, permission or capacity claim change.",
+      "publication_review": "Source and repository record review; no full-system rerun for this publication."
+    }
+  ],
+  "previous_publication_validation": {
+    "portfolio_version": "0.5.0",
+    "public_commit": "18eb67863d9a6c99252cf8e96f2d027412bc8035",
+    "identity_note": "Historical 0.5.0 publication provenance; 0.5.1 remains in historical_publication_validation_0_5_1."
+  },
+  "raw_evidence_access_scope": "Read-only access to audit final08 local originals and JUnit on 2026-10-04; not all prior historical batches and not a test rerun.",
+  "historical_system_verification_20261001_02": {
     "dates": [
       "2026-10-01",
       "2026-10-02"
@@ -311,37 +392,10 @@
       "professional acceptance",
       "real external delivery",
       "production readiness"
-    ]
-  },
-  "recent_workflow_audit": {
-    "tested_source_commit": "a455028c516093bcc6ebdb3ab5c9e05d46b1c14a",
-    "dates": [
-      "2026-09-29",
-      "2026-09-30"
     ],
-    "record_path": "main/docs/engineering/HUMAN_WORKFLOW_AUDIT_20260930.md",
-    "record_source_commit": "ea5a226f8823c32bc80ac761bb73eab3dd00cadf",
-    "record_git_blob": "f28553059a92ee8f23bd3dcdfe60a8ea18c39744",
-    "scope": "Tool-assisted human-workflow simulation with fixture and owner setup interventions; not an independent enterprise trial.",
-    "journals": 4,
-    "journal_lines": 11,
-    "journal_roles": [
-      "recognition",
-      "settlement",
-      "reversal",
-      "replacement"
-    ],
-    "ending_balances": {
-      "bank_debit": "210.00",
-      "receivable": "0.00",
-      "revenue_credit": "200.00",
-      "output_tax_credit": "10.00"
-    },
-    "recorded_reproducible_issues": 16,
-    "all_issues_claimed_fixed": false,
-    "full_original_scenario_rerun_on_current_main": false
+    "record_scope_note": "Historical 10/01-02 findings and failures; consult audit_oriented_review_20261003 for subsequent bounded repairs. Do not rewrite the old outcomes."
   },
-  "publication_validation": {
+  "historical_publication_validation_0_5_1": {
     "scope": "Public sample, publishing exporter and document checks only; separate from private-system fast or release collector.",
     "exporter_git_blob": "b6672fbd998216c66ec9cb90ad0f55155b4bf616",
     "exporter_tests_git_blob": "ff292d7756b1ed29ce189fea8058b7168af74f97",
@@ -382,34 +436,292 @@
       "output_was_outside_private_repository": true
     }
   },
-  "recent_implementation_changes": [
-    {
-      "commit": "6536c34e914097e04184843fa81248bc2a406ec5",
-      "scope": "Stored settlement and correction lineage in case trace.",
-      "publication_review": "Source and repository record review; no full-system rerun for this publication."
+  "audit_oriented_review_20261003": {
+    "date": "2026-10-03",
+    "cycle": "final08",
+    "report": "docs/AUDIT_REVIEW_20261003.md",
+    "tested_source_commit": "29fe3295c49559486e41e8d69f1238a51143572e",
+    "verification_index_commit": "c8364fc27fd7c841f8a172cdce48676f0050d149",
+    "overview_source_commit": "93c871ef24adb32a9fd64de33453548ca4661f10",
+    "source_fingerprint_sha256": "4388046d9723c62eedd72e603ffe0435aa7e2f5a531fa4e380a311bf18a6db70",
+    "selected_source_files": 592,
+    "snapshot_files": 627,
+    "snapshot_manifest_sha256": "4512f136a0041f3a31735f8cb5a28b2f5df08896c7febcc004010a564aa12c01",
+    "current_application_and_database_match_tested_source": true,
+    "current_full_fingerprint_equivalence_claimed": false,
+    "method": [
+      "Define risk and fixed expectations before comparison",
+      "Reproduce pre-fix negatives",
+      "Test service, PostgreSQL authority and browser separately",
+      "Make bounded repairs without weakening valid rejection",
+      "Rerun legal controls and negative cases on frozen source",
+      "Reconcile actual parameterized nodes and retain historical failures"
+    ],
+    "bounded_repairs_and_contract_adjustments": {
+      "total": 16,
+      "change_classes": {
+        "A": 2,
+        "B": 12,
+        "C": 2
+      },
+      "classification_note": "Change-control classes, not 16 independent product vulnerabilities."
     },
-    {
-      "commit": "29007bbbfe945ea13c645351c51b5228242b3997",
-      "scope": "Recognition, posting date and settlement role-separation denial guidance.",
-      "publication_review": "Source and repository record review; no full-system rerun for this publication."
+    "financial_assertion_rows": 18,
+    "it_general_and_processing_control_rows": 20,
+    "analytical_procedures": 9,
+    "fast": {
+      "junit_testcases": 2833,
+      "passed": 2188,
+      "skipped": 645,
+      "failures": 0,
+      "errors": 0,
+      "subtest_events_not_testcases": 195
     },
-    {
-      "commit": "71e76862aadbb01c5fc1727f95290012eee08826",
-      "scope": "Correction evidence selection and consumer rejection consistency.",
-      "publication_review": "Source and repository record review; no full-system rerun for this publication."
+    "postgresql": {
+      "modules": 53,
+      "passed_testcases": 675,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "fresh_isolated_clusters": true,
+      "overlap_with_fast_passes": 36,
+      "recognition_document_subset": 31,
+      "accounting_subset": 78,
+      "amount_regression_subset_in_accounting": 26
     },
-    {
-      "commit": "4fb11e6144f4bc54aa3788f4de606ad37586e55c",
-      "scope": "Six-table row-content fingerprints and a snapshot shared with backup.",
-      "publication_review": "Source and repository record review; no full-system rerun for this publication."
+    "skip_reconciliation": {
+      "original_fast_skips": 645,
+      "postgresql_complement": 639,
+      "linux_complement": 6,
+      "covered": 645,
+      "missing": 0,
+      "original_skip_outcomes_preserved": true,
+      "unique_main_python_nodes_with_pass_evidence": 2833,
+      "formula": "2188 + (675 - 36) + 6 = 2833",
+      "single_all_pass_windows_run": false
     },
-    {
-      "commit": "e4258f2862ff761004e3ed5f67e52208e7ca062a",
-      "scope": "Bounded repeated composite-row expansion repair; no date, permission or capacity claim change.",
-      "publication_review": "Source and repository record review; no full-system rerun for this publication."
-    }
-  ],
-  "alignment_review": {
+    "node": {
+      "passed": 169
+    },
+    "repository_workflow_contracts": {
+      "passed": 4,
+      "github_actions_execution_implied": false
+    },
+    "browser": {
+      "unique_scripts": 25,
+      "passed": 25,
+      "failed": 0,
+      "skipped": 0,
+      "not_run": 0,
+      "database_backed_synthetic": 15,
+      "served_ui_mocked_api": 2,
+      "standalone_mock": 8,
+      "invocations_including_repeats": 30,
+      "prior_pass_reused": false,
+      "human_acceptance": false
+    },
+    "deployment_equivalence": {
+      "environments": 2,
+      "accounting_tests_per_environment": 78,
+      "phases": [
+        "fresh",
+        "populated-rerun",
+        "failure-recovery"
+      ],
+      "differences": 0,
+      "scope": "Same-version catalog, privileges and bounded eight-table histories; not arbitrary upgrades or production disaster recovery."
+    },
+    "release_collector": {
+      "exit_code": 0,
+      "required_local_evidence_files": 63,
+      "archived_files_reverified": 73
+    },
+    "enterprise_local_collector": {
+      "exit_code": 0,
+      "required_evidence_files": 14,
+      "archived_files_reverified": 18
+    },
+    "nine_analytical_procedures": {
+      "result": "PASS_SELECTED_SYNTHETIC_REPERFORMANCE",
+      "numeric_difference": 0,
+      "n16": {
+        "invoices": 16,
+        "vouchers": 16,
+        "unique_journals": 16,
+        "journal_lines": 48,
+        "gross_each": "106.00",
+        "total_debit": "1696.00",
+        "total_credit": "1696.00",
+        "extra_observer_capture": "post-replay only, not independent before/after replay deltas"
+      },
+      "report_readers_include_dba_seeded_populations": true,
+      "comparison_counts_are_not_transactions": true
+    },
+    "current_finding_states": {
+      "M02": "Bounded known-template repair verified in final08; opaque documents remain governed/manual. Original failure retained.",
+      "M05": "Checkbox, retrieval and reviewed IDs do not prove active opening, understanding or correct comparison; not closed by M02 repair.",
+      "AT12": "Raw amount finite/range/exactness repair verified, not generalized to all currencies or numeric policies."
+    },
+    "formal_status": {
+      "product_evidence_exit": 1,
+      "local_readiness_exit": 1,
+      "enterprise_go_live_exit": 2,
+      "artifact_contract_valid": true,
+      "local_engineering_readiness_passed": false,
+      "production_go_live_allowed": false,
+      "remaining_unobserved_scopes": [
+        "interactive_accountant_workspace_e2e",
+        "production_observability",
+        "restore_drill",
+        "performance_and_security_review",
+        "external_p0_5_trust_evidence"
+      ]
+    },
+    "evidence_sources": {
+      "E01": {
+        "description": "Final analysis report (machine and human records)",
+        "records": [
+          {
+            "sha256": "e0402ed96f7c031dacb8c2f0d428ced34f71aceb8f49dc91dcf6523cfeef194a",
+            "kind": "json_record",
+            "bytes": 2078506
+          },
+          {
+            "sha256": "d585bd319585ec01296fd4f3d35499c936328af37069967e652e6b6d6012d733",
+            "kind": "human_report",
+            "bytes": 107900
+          }
+        ],
+        "availability": "Controlled private original; hash is identity, not a claim that the public repository can independently rerun it."
+      },
+      "E02": {
+        "description": "Exact-node coverage reconciliation",
+        "records": [
+          {
+            "sha256": "c258876d252a7f68f7edea805f45d77eb27615a801343e909623eb4c5be4cebd",
+            "kind": "json_record",
+            "bytes": 70751
+          }
+        ],
+        "availability": "Controlled private original; hash is identity, not a claim that the public repository can independently rerun it."
+      },
+      "E03": {
+        "description": "Recognition-document PostgreSQL suite",
+        "records": [
+          {
+            "sha256": "cb7bd997ee6c29a09471540326879b8cb14b657ad54d9a27d2aaf0b0fcbbb639",
+            "kind": "json_record",
+            "bytes": 2984
+          },
+          {
+            "sha256": "cb191881f2a08fa0e9cb6107cd9c61911f788fa53b7b2e3cb0cce22932b01426",
+            "kind": "junit",
+            "bytes": 5727
+          }
+        ],
+        "availability": "Controlled private original; hash is identity, not a claim that the public repository can independently rerun it."
+      },
+      "E04": {
+        "description": "Accounting PostgreSQL suite",
+        "records": [
+          {
+            "sha256": "b296e5b8304946eaf82c310286c2cd4aa54ea72e6820de8e9fcc62098251c79f",
+            "kind": "json_record",
+            "bytes": 3038
+          },
+          {
+            "sha256": "753bc29e7c5e7d24b55f58397e840b70e6ae4bf832b5972a8f5f5c9420ec68df",
+            "kind": "junit",
+            "bytes": 11809
+          }
+        ],
+        "availability": "Controlled private original; hash is identity, not a claim that the public repository can independently rerun it."
+      },
+      "E05": {
+        "description": "Browser scope and completion",
+        "records": [
+          {
+            "sha256": "78e98bd2cb71ba272fd4e2507e19dfae27d4e98f36a5d0c5d039579228cf1d8c",
+            "kind": "json_record",
+            "bytes": 6448
+          },
+          {
+            "sha256": "bdf36bcd87bb598c1f025d5be55b49d92c982bd19d1800339882406d7e17573a",
+            "kind": "json_record",
+            "bytes": 55846
+          }
+        ],
+        "availability": "Controlled private original; hash is identity, not a claim that the public repository can independently rerun it."
+      },
+      "E06": {
+        "description": "Two-entry deployment equivalence",
+        "records": [
+          {
+            "sha256": "efba7552508ac44fae3a338544a19988d5efcd31f9a4c44c4673ba0b5a9bef8d",
+            "kind": "json_record",
+            "bytes": 9481
+          }
+        ],
+        "availability": "Controlled private original; hash is identity, not a claim that the public repository can independently rerun it."
+      },
+      "E07": {
+        "description": "Enterprise-local collector",
+        "records": [
+          {
+            "sha256": "28057aa0c6f48f1a39489d3a6969a6a9d1b1cb21d7dedf72ae29457c6b2bd692",
+            "kind": "json_record",
+            "bytes": 12400
+          }
+        ],
+        "availability": "Controlled private original; hash is identity, not a claim that the public repository can independently rerun it."
+      },
+      "E08": {
+        "description": "Release collector and remaining readiness conditions",
+        "records": [
+          {
+            "sha256": "8ae02843a8db50dd156463575247229016ff865ed2703ecb69a13e1146dd1734",
+            "kind": "json_record",
+            "bytes": 36588
+          }
+        ],
+        "availability": "Controlled private original; hash is identity, not a claim that the public repository can independently rerun it."
+      },
+      "E09": {
+        "description": "Final fast summary and JUnit",
+        "records": [
+          {
+            "sha256": "5584c9d80d0089370ea4f72ea3fd1f1bb66cc4bfbb15c0132df80d4c13fd801f",
+            "kind": "json_record",
+            "bytes": 4700
+          },
+          {
+            "sha256": "f7212f71f4316ea1213089f6b4bb22bb0333374d0ffbb279992221d9f783cd2f",
+            "kind": "junit",
+            "bytes": 628564
+          }
+        ],
+        "availability": "Controlled private original; hash is identity, not a claim that the public repository can independently rerun it."
+      }
+    },
+    "publication_readback_20261004": {
+      "original_references_rehashed": 1199,
+      "report_outputs_rehashed": 2,
+      "hash_mismatches": 0,
+      "saved_junit_files_recounted": 55,
+      "missing_original_fast_skip_coverage": 0,
+      "system_rerun": false
+    },
+    "limitations": [
+      "Synthetic local engineering, not qualified independent audit or full-period control effectiveness.",
+      "Not all document formats are machine validated; CSV content hash does not independently validate caller-normalized rows.",
+      "Some reports use reader-only seeds; this does not enable normal posting for every seeded transaction.",
+      "B4 native JSON numeric producer limits remain; reported reperformance is bounded to fixed small whole amounts and SQL text aggregates.",
+      "M05 human review, specified interactive workspace scope, production operations and external trust remain unestablished.",
+      "Source, package, deployment and analysis contexts overlap; do not sum their totals."
+    ]
+  },
+  "current_verification_record": "audit_oriented_review_20261003",
+  "historical_alignment_review_0_5_1": {
     "date": "2026-10-02",
     "private_source_commit": "da8ad61e8f1055e276715a8f7a1aec2c0751116c",
     "public_baseline_commit": "18eb67863d9a6c99252cf8e96f2d027412bc8035",
@@ -426,9 +738,44 @@
     "publication_gate_scope": "19-file export and verify-only; exporter boundary tests on Linux; preserved public policy tests in an isolated Windows environment. No full private-system rerun.",
     "full_system_rerun": false
   },
-  "previous_publication_validation": {
-    "portfolio_version": "0.5.0",
-    "public_commit": "18eb67863d9a6c99252cf8e96f2d027412bc8035",
-    "identity_note": "Historical publishing validation retained for provenance; current 0.5.1 validation is recorded separately."
+  "publication_validation": {
+    "date": "2026-10-04",
+    "portfolio_version": "0.6.0",
+    "scope": "Public documents, original audit evidence readback, exporter and standalone policy sample only.",
+    "linux_exporter_tests": {
+      "environment": "Assistant Linux working container, not Charlotte Docker",
+      "python": "3.13.5",
+      "tests": 22,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "log_sha256": "84dac62a626d8604579feb0492306a6894dd63cb58797bb2e23e7abf4164c8eb"
+    },
+    "windows_exporter_tests": {
+      "python": "3.13.3",
+      "tests": 22,
+      "errors": 5,
+      "status": "not_passed",
+      "observations": [
+        "Four symlink privilege errors (WinError 1314).",
+        "Existing empty output directory replacement denied (WinError 5)."
+      ],
+      "tests_or_host_privileges_modified": false
+    },
+    "actual_export": {
+      "platform": "Windows",
+      "python": "3.13.3",
+      "files": 20,
+      "target_initial_state": "New nonexistent directory outside the private repository",
+      "export": "PASS",
+      "verify_only_after_sample_test": "PASS"
+    },
+    "relative_links_and_anchors_checked": 59,
+    "markdown_tables_checked": 24,
+    "new_public_files": [
+      "docs/AUDIT_REVIEW_20261003.md"
+    ],
+    "private_implementation_disclosure_expanded": false,
+    "execution_note": "Docker engine unavailable; original byte-identical exporter boundary tests ran in the assistant Linux environment. Actual full export and sample test ran on Windows without changing exporter rules."
   }
 }

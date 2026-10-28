@@ -1,15 +1,15 @@
 {
   "schema_version": "ledgertrail-portfolio-evidence-summary-v1",
-  "assessment_date": "2026-10-04",
-  "overview_source_commit": "93c871ef24adb32a9fd64de33453548ca4661f10",
+  "assessment_date": "2026-10-28",
+  "overview_source_commit": "768985d1e1c729ef4b2ce8248571ece4152a938f",
   "evidence_level": "publisher_summary_of_source_and_repository_records_not_independent_verification",
   "full_system_tests_rerun_for_this_publication": false,
-  "full_system_raw_junit_reacquired_for_this_publication": true,
+  "full_system_raw_junit_reacquired_for_this_publication": false,
   "scale": {
     "functional_domains": 12,
     "sql_catalog": {
       "source_path": "main/docs/reference/SQL_FUNCTION_CATALOG.md",
-      "source_git_blob": "579a1dfc19e5d47f84aafa6c55e8becf031c629e",
+      "source_git_blob": "6d4155c2828940e1f9797861e822f8637cd92efd",
       "method": "Sum the committed generated catalogue category counts. The generator and live PostgreSQL catalogue were not rerun for this publication.",
       "object_types": [
         "functions",
@@ -20,16 +20,16 @@
       ],
       "categories": {
         "信任強化": 2,
-        "外部整合": 28,
-        "安全治理": 142,
+        "外部整合": 29,
+        "安全治理": 164,
         "延後模組": 48,
-        "本地證據一致性": 194,
-        "產品試點核心": 4,
+        "本地證據一致性": 201,
+        "產品試點核心": 38,
         "確定性會計核心": 48,
-        "維運觀測": 255,
+        "維運觀測": 268,
         "選用財務操作": 7
       },
-      "total": 728,
+      "total": 805,
       "limitations": [
         "Includes retained, deferred and disabled objects; not usable feature, table or endpoint counts.",
         "Classification includes heuristics and inherited capability labels; it does not prove per-object activation or tests.",
@@ -123,11 +123,28 @@
         },
         "implementation_and_test_hashes_unchanged": true,
         "scope": "Unmodified preserved public policy module on synthetic inputs only; not the complete private accounting system."
+      },
+      {
+        "date": "2026-10-04",
+        "portfolio_version": "0.6.0",
+        "platform": "Windows",
+        "python": "3.13.3",
+        "pytest": "9.0.2",
+        "isolated_virtual_environment": true,
+        "third_party_plugin_autoload": false,
+        "result": {
+          "passed": 112,
+          "failed": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        "implementation_and_test_hashes_unchanged": true,
+        "scope": "Standalone preserved public policy sample only; no complete private-system rerun."
       }
     ],
     "publication_run": {
-      "date": "2026-10-04",
-      "portfolio_version": "0.6.0",
+      "date": "2026-10-28",
+      "portfolio_version": "0.7.0",
       "platform": "Windows",
       "python": "3.13.3",
       "pytest": "9.0.2",
@@ -140,7 +157,7 @@
         "skipped": 0
       },
       "implementation_and_test_hashes_unchanged": true,
-      "scope": "Standalone preserved public policy sample only; no complete private-system rerun."
+      "scope": "Preserved standalone policy sample; not AI, database posting or full-system acceptance."
     }
   },
   "historical_browser": {
@@ -208,7 +225,10 @@
     "M05_substantive_human_review",
     "overall_local_engineering_readiness",
     "independent_professional_assurance",
-    "complete_system_rerun_on_93c871e_or_publication_commit"
+    "complete_system_rerun_on_768985d_or_publication_commit",
+    "v5_all_group_citation_accuracy",
+    "real_complete_month_and_external_gl_acceptance",
+    "independent_ai_semantic_or_professional_acceptance"
   ],
   "identity_boundary": "Owner execution of specified commands and manual operations is recorded separately from AI-assisted implementation, diagnosis and automation; neither establishes independent full-system or professional verification.",
   "case_source_records_assessment_commit": "2bc586c124b94b3121a94020274d5e2310584684",
@@ -272,7 +292,7 @@
     "public_commit": "18eb67863d9a6c99252cf8e96f2d027412bc8035",
     "identity_note": "Historical 0.5.0 publication provenance; 0.5.1 remains in historical_publication_validation_0_5_1."
   },
-  "raw_evidence_access_scope": "Read-only access to audit final08 local originals and JUnit on 2026-10-04; not all prior historical batches and not a test rerun.",
+  "raw_evidence_access_scope": "Current source and committed versioned records reviewed. Original complete-system audit and live-model artifacts were not reacquired or rerun in this publication.",
   "historical_system_verification_20261001_02": {
     "dates": [
       "2026-10-01",
@@ -720,7 +740,7 @@
       "Source, package, deployment and analysis contexts overlap; do not sum their totals."
     ]
   },
-  "current_verification_record": "audit_oriented_review_20261003",
+  "current_verification_record": "development_review_20261028",
   "historical_alignment_review_0_5_1": {
     "date": "2026-10-02",
     "private_source_commit": "da8ad61e8f1055e276715a8f7a1aec2c0751116c",
@@ -738,7 +758,7 @@
     "publication_gate_scope": "19-file export and verify-only; exporter boundary tests on Linux; preserved public policy tests in an isolated Windows environment. No full private-system rerun.",
     "full_system_rerun": false
   },
-  "publication_validation": {
+  "historical_publication_validation_0_6_0": {
     "date": "2026-10-04",
     "portfolio_version": "0.6.0",
     "scope": "Public documents, original audit evidence readback, exporter and standalone policy sample only.",
@@ -777,5 +797,109 @@
     ],
     "private_implementation_disclosure_expanded": false,
     "execution_note": "Docker engine unavailable; original byte-identical exporter boundary tests ran in the assistant Linux environment. Actual full export and sample test ran on Windows without changing exporter rules."
+  },
+  "historical_audit_scope_notice": "audit_oriented_review_20261003, including its current_* fields, records the 2026-10-04 assessment at 93c871e and original 29fe3295 tests. Current application/database trees have changed; no current whole-system equivalence or rerun is claimed.",
+  "development_review_20261028": {
+    "assessment_date": "2026-10-28",
+    "reviewed_source_commit": "768985d1e1c729ef4b2ce8248571ece4152a938f",
+    "review_type": "Static implementation and committed-record review, not new system execution.",
+    "source_records": [
+      {
+        "path": "main/docs/PROJECT_AT_A_GLANCE.md",
+        "git_blob": "f97aca278975592bc7ceb3c087fe147379a761ff"
+      },
+      {
+        "path": "main/docs/FUNCTION_GUIDE.md",
+        "git_blob": "4307f07b4aba80121f982e82040c1d851b23e469"
+      },
+      {
+        "path": "main/docs/engineering/PHASE_1_ACCOUNTING_SEMANTICS.md",
+        "git_blob": "332e9f1e68197ddac4125c69a3f32502e4193fe9"
+      },
+      {
+        "path": "main/docs/engineering/DEFECT_REGISTER.md",
+        "git_blob": "f542390a39eabadeba60e45c59812cdaa3827c76"
+      },
+      {
+        "path": "main/docs/operations/FTVP_OFFLINE_VERIFIER.md",
+        "git_blob": "f3293cb936c9abec33507afe3b7358fc2f5f9ce7"
+      },
+      {
+        "path": "main/docs/operations/SYNTHETIC_MONTH_REHEARSAL.md",
+        "git_blob": "16d7a9c68286241096484c0fbe21d93c215c1f29"
+      },
+      {
+        "path": "main/docs/operations/VERIFICATION_EVIDENCE.md",
+        "git_blob": "8762794767073ec1f0e7c0f53950c906b35baf7f"
+      },
+      {
+        "path": "main/app/README.md",
+        "git_blob": "39ab8b7dda4ded9383181a985e37efea109c1131"
+      }
+    ],
+    "current_capabilities": {
+      "gemini_candidates": "Server-approved synthetic expense candidates, raw/rejected result persistence and admission requiring human review; no automatic posting.",
+      "financial_insight_v2": "Selected synthetic case facts and numeric references; complete-period revenue, expense and profit unavailable.",
+      "investigation_v5": "Single-case quote-first generation; direct substantive terms and changes/reference-back selected separately. Historical v3/v4 remain original-version readback; v2 is explicitly selectable. Financially read-only, generation evidence is persisted.",
+      "offline_handoff": "Versioned named-reviewer handoff has dedicated offline recomputation; full assigned event material may be disclosed. Download does not mean verification executed; local consistency is not professional or external trust.",
+      "synthetic_month": "Bounded rehearsal and local synthetic-recipient recovery exist; open items and external prerequisites remain, not real-month completion.",
+      "normal_local_runtime": "Existing database and normal API lifecycle with optional pre-parse model evidence; no automatic database creation, migration, reset or model call. Backup readability is not restore acceptance."
+    },
+    "known_v5_record": {
+      "record_date": "2026-10-21",
+      "record_source_commit": "768985d1e1c729ef4b2ce8248571ece4152a938f",
+      "original_source_short_ref": "e4e3172",
+      "cases": 6,
+      "classification_and_required_citations": {
+        "passed": 6,
+        "total": 6
+      },
+      "citation_group_attribution": {
+        "passed": 5,
+        "total": 6
+      },
+      "case04_original_result": "FAIL_KNOWN_LIMITATION",
+      "finding": "Direct substantive agreement omitted; a format-change reference was selected instead. Bounded impact assessment did not rewrite the failure or establish general harmlessness.",
+      "raw_artifacts_reacquired_for_publication": false,
+      "independent_human_or_professional_acceptance": false
+    },
+    "model_history_boundary": "Earlier responses, upstream 429/503 failures and semantic issues retain their versions and batches. No cross-run aggregate accuracy, prompt superiority or reliability claim.",
+    "sample_files_match_current_private_source": true,
+    "current_application_and_database_match_20261003_tested_source": false,
+    "full_system_tests_run": false,
+    "live_provider_calls": 0,
+    "business_service_start_or_database_mutation": false
+  },
+  "publication_validation": {
+    "date": "2026-10-28",
+    "portfolio_version": "0.7.0",
+    "scope": "Current public documents, preserved policy sample and original exporter only. No complete private-system rerun.",
+    "linux_exporter_tests": {
+      "environment": "Assistant Linux working environment; byte-identical exporter and tests checked by SHA-256",
+      "python": "3.13.5",
+      "tests": 22,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "windows_exporter_suite": "NOT_RUN_THIS_PUBLICATION; previous platform-specific errors remain in historical publication records.",
+    "actual_export": {
+      "platform": "Windows",
+      "python": "3.13.3",
+      "files": 20,
+      "target_initial_state": "New nonexistent directory outside private repository",
+      "export": "PASS",
+      "verify_only_after_sample_test": "PASS"
+    },
+    "relative_links_and_anchors_checked": 57,
+    "markdown_tables_checked": 25,
+    "changed_existing_public_files": 7,
+    "unchanged_public_files": 13,
+    "new_public_files": [],
+    "deleted_public_files": [],
+    "historical_audit_report_byte_preserved": true,
+    "original_policy_and_tests_byte_preserved": true,
+    "private_implementation_disclosure_expanded": false,
+    "new_receipts_or_task_reports_created": false
   }
 }
